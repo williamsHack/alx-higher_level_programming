@@ -1,9 +1,9 @@
 #!/usr/bin/node
-
-exports.esrever = function (list) {
-  const newArr = [];
-  for (let x = list.length - 1; x >= 0; x--) {
-    newArr.push(list[x]);
+const sqr = process.argv[2];
+if (isNaN(sqr)) {
+  console.log('Missing size');
+} else {
+  for (let x = 0; x < sqr; x++) {
+    console.log('X'.repeat(sqr));
   }
-  return (newArr);
-};
+}

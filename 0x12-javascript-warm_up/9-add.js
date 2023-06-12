@@ -1,3 +1,6 @@
 #!/usr/bin/node
-let count = 0;
-exports.logMe = function (item) { console.log(`${count++}: ${item}`); };
+function add (a, b) {
+  return (a + b);
+}
+
+console.log(add(Number(process.argv[2]), Number(process.argv[3])));

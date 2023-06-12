@@ -1,10 +1,6 @@
 #!/usr/bin/node
-const Rectangle = require('./4-rectangle');
-
-class Square extends Rectangle {
-  constructor (size) {
-    super(size, size);
-  }
+if (isNaN(process.argv[2]) || process.argv[2] === undefined) {
+  console.log('Not a number');
+} else {
+  console.log('My number:', parseInt(process.argv[2]));
 }
-
-module.exports = Square;

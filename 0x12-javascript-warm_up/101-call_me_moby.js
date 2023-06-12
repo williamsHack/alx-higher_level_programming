@@ -1,10 +1,6 @@
 #!/usr/bin/node
-const dict = require('./101-data.js').dict;
-const newDict = {};
-for (const key in dict) {
-  if (newDict[dict[key]] === undefined) {
-    newDict[dict[key]] = [];
+exports.callMeMoby = function (x, theFunction) {
+  for (let i = 0; i < x; i++) {
+    theFunction();
   }
-  newDict[dict[key]].push(key);
-}
-console.log(newDict);
+};

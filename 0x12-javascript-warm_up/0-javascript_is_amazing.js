@@ -1,4 +1,3 @@
 #!/usr/bin/node
-module.exports = class Rectangle {
-
-};
+const myVar = 'JavaScript is amazing';
+console.log(myVar);
